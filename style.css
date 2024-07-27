@@ -1,65 +1,70 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    padding: 1em 0;
 }
 
-nav {
-    background-color: #333;
+header h1 {
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 1em;
+    display: inline;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding: 0.5em;
-    display: block;
 }
 
-nav ul li a:hover {
-    background-color: #575757;
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main {
-    display: flex;
-    margin: 1em;
+section h2 {
+    color: #333;
 }
 
-article {
-    flex: 3;
-    padding: 1em;
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+    margin-left: 20px;
 }
 
-aside {
-    flex: 1;
-    background-color: #f4f4f4;
-    padding: 1em;
-    margin-left: 1em;
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: decimal;
+    margin-left: 20px;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
