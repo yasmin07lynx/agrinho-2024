@@ -1,57 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Agricultura Sustentável </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Agricultura Sustentável</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Agricultura Sustentável</h1>
-        <nav>
-            <ul>
-                <li><a href="#introducao">Introdução</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#praticas">Práticas</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Agricultura Sustentável</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#praticas">Práticas</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <section id="introducao">
-        <h2>O que é Agricultura Sustentável?</h2>
-        <p>A agricultura sustentável é um método de cultivo que busca equilibrar a produção de alimentos com a conservação ambiental, a saúde dos ecossistemas e a prosperidade das comunidades rurais. O objetivo é atender às necessidades da geração atual sem comprometer a capacidade das gerações futuras de atender às suas próprias necessidades.</p>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre a Agricultura Sustentável</h2>
+            <p>A agricultura sustentável é um sistema de práticas agrícolas que busca...</p>
+        </div>
     </section>
-    
-    <section id="beneficios">
-        <h2>Benefícios da Agricultura Sustentável</h2>
-        <ul>
-            <li>Preservação dos recursos naturais</li>
-            <li>Redução da poluição e erosão</li>
-            <li>Melhoria da biodiversidade</li>
-            <li>Segurança alimentar a longo prazo</li>
-        </ul>
+
+    <section id="praticas" class="section">
+        <div class="container">
+            <h2>Práticas Sustentáveis</h2>
+            <div class="slider">
+                <div class="slide">
+                    <img src="img/pratica1.jpg" alt="Prática 1">
+                    <h3>Uso de Agricultura Orgânica</h3>
+                    <p>Descrição da prática...</p>
+                </div>
+                <div class="slide">
+                    <img src="img/pratica2.jpg" alt="Prática 2">
+                    <h3>Rotação de Culturas</h3>
+                    <p>Descrição da prática...</p>
+                </div>
+                <div class="slide">
+                    <img src="img/pratica3.jpg" alt="Prática 3">
+                    <h3>Uso Eficiente de Água</h3>
+                    <p>Descrição da prática...</p>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="praticas">
-        <h2>Práticas Comuns</h2>
-        <p>Algumas práticas comuns na agricultura sustentável incluem:</p>
-        <ol>
-            <li>Uso de técnicas de cultivo de cobertura</li>
-            <li>Rotação de culturas</li>
-            <li>Controle biológico de pragas</li>
-            <li>Compostagem e uso de adubos orgânicos</li>
-        </ol>
+
+    <section id="beneficios" class="section">
+        <div class="container">
+            <h2>Benefícios da Agricultura Sustentável</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <img src="img/benefit1.jpg" alt="Benefício 1">
+                    <h3>Redução do Impacto Ambiental</h3>
+                    <p>Descrição do benefício...</p>
+                </div>
+                <div class="benefit">
+                    <img src="img/benefit2.jpg" alt="Benefício 2">
+                    <h3>Qualidade dos Alimentos</h3>
+                    <p>Descrição do benefício...</p>
+                </div>
+                <div class="benefit">
+                    <img src="img/benefit3.jpg" alt="Benefício 3">
+                    <h3>Sustentabilidade Econômica</h3>
+                    <p>Descrição do benefício...</p>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <p>Para mais informações sobre agricultura sustentável, entre em contato conosco através do email: <a href="mailto:contato@agriculturabrasil.com">contato@agriculturabrasil.com</a>.</p>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="statusMessage"></p>
+        </div>
     </section>
-    
+
     <footer>
-        <p>&copy; 2024 Agricultura Sustentável Brasil</p>
+        <div class="container">
+            <p>&copy; 2024 Agricultura Sustentável. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

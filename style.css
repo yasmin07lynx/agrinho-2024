@@ -1,71 +1,185 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
-    background-color: #46abb2;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-    background: #333;
-    color: #74b2e3;
+    background-color: #4CAF50;
+    color: #fff;
     padding: 10px 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    padding: 0;
+    font-size: 2.5rem;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: #22359c;
+    color: #fff;
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
 }
 
-section {
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Slider/Carrossel */
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 60%;
     padding: 20px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.slide:hover {
+    transform: scale(1.05);
+}
+
+.slide img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.slide h3 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.slide p {
+    margin-top: 5px;
+}
+
+/* Benefícios */
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    width: calc(33.3% - 20px);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-10px);
+}
+
+.benefit img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.benefit h3 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.benefit p {
+    margin-top: 5px;
+}
+
+/* Formulário de Contato */
+form {
+    max-width: 600px;
     margin: 0 auto;
-    max-width: 800px;
-    background: #35a3b4;
+    background-color: #fff;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    color: #333;
+.form-group {
+    margin-bottom: 20px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: disc;
-    margin-left: 20px;
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-ol {
-    margin: 0;
-    padding: 0;
-    list-style: decimal;
-    margin-left: 20px;
-}
-
-footer {
-    background: #333;
-    color: #661fe2;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
+form input[type="text"],
+form input[type="email"],
+form textarea {
     width: 100%;
-    bottom: 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#statusMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
 }
