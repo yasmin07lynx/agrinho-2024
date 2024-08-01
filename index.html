@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agricultura Sustentável</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <h1>Agricultura Sustentável</h1>
-            <nav>
+            <h1 class="logo">Agricultura Sustentável</h1>
+            <nav class="menu">
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#praticas">Práticas</a></li>
                     <li><a href="#beneficios">Benefícios</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
@@ -21,87 +20,41 @@
         </div>
     </header>
 
-    <section id="sobre" class="section">
+    <section id="destaque" class="section destaque">
         <div class="container">
-            <h2>Sobre a Agricultura Sustentável</h2>
-            <p>A agricultura sustentável é um sistema de práticas agrícolas que busca...</p>
+            <h2 class="section-title">O que é Agricultura Sustentável?</h2>
+            <p class="section-content">A agricultura sustentável visa produzir alimentos, fibras, combustíveis e outros produtos agrícolas de maneira que seja ecologicamente correta, economicamente viável e socialmente justa.</p>
+            <a href="#beneficios" class="btn">Saiba mais</a>
         </div>
     </section>
 
-    <section id="praticas" class="section">
+    <section id="beneficios" class="section beneficios">
         <div class="container">
-            <h2>Práticas Sustentáveis</h2>
-            <div class="slider">
-                <div class="slide">
-                    <img src="img/pratica1.jpg" alt="Prática 1">
-                    <h3>Uso de Agricultura Orgânica</h3>
-                    <p>Descrição da prática...</p>
-                </div>
-                <div class="slide">
-                    <img src="img/pratica2.jpg" alt="Prática 2">
-                    <h3>Rotação de Culturas</h3>
-                    <p>Descrição da prática...</p>
-                </div>
-                <div class="slide">
-                    <img src="img/pratica3.jpg" alt="Prática 3">
-                    <h3>Uso Eficiente de Água</h3>
-                    <p>Descrição da prática...</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="beneficios" class="section">
-        <div class="container">
-            <h2>Benefícios da Agricultura Sustentável</h2>
-            <div class="benefits">
+            <h2 class="section-title">Benefícios da Agricultura Sustentável</h2>
+            <div class="benefits-list">
                 <div class="benefit">
                     <img src="img/benefit1.jpg" alt="Benefício 1">
                     <h3>Redução do Impacto Ambiental</h3>
-                    <p>Descrição do benefício...</p>
+                    <p>Menor uso de agrotóxicos e conservação dos recursos naturais.</p>
                 </div>
                 <div class="benefit">
                     <img src="img/benefit2.jpg" alt="Benefício 2">
-                    <h3>Qualidade dos Alimentos</h3>
-                    <p>Descrição do benefício...</p>
+                    <h3>Alimentos de Qualidade</h3>
+                    <p>Produtos mais saudáveis e nutritivos para consumidores.</p>
                 </div>
                 <div class="benefit">
                     <img src="img/benefit3.jpg" alt="Benefício 3">
                     <h3>Sustentabilidade Econômica</h3>
-                    <p>Descrição do benefício...</p>
+                    <p>Melhoria na renda e na qualidade de vida dos agricultores.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contato" class="section">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" required></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-            <p id="statusMessage"></p>
-        </div>
-    </section>
-
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Agricultura Sustentável. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
